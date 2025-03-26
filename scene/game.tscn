@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://rjdxvn52p5tr"]
+
+[ext_resource type="PackedScene" uid="uid://bm4ydj22glok2" path="res://scene/pipes.tscn" id="2_cs1rk"]
+[ext_resource type="PackedScene" uid="uid://b3jhrulprc0cp" path="res://scene/player.tscn" id="2_s3wrh"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." node_paths=PackedStringArray("Spawn") instance=ExtResource("2_s3wrh")]
+Spawn = NodePath("../PlayerSpawn")
+
+[node name="Pipes" parent="." instance=ExtResource("2_cs1rk")]
+
+[node name="PlayerSpawn" type="Marker2D" parent="."]
+position = Vector2(165, 195)
+
+[node name="Pipes2" parent="." instance=ExtResource("2_cs1rk")]
+position = Vector2(601, 344)
+
+[node name="Pipes3" parent="." instance=ExtResource("2_cs1rk")]
+position = Vector2(737, 260)
+
+[node name="Pipes4" parent="." instance=ExtResource("2_cs1rk")]
+position = Vector2(885, 323)
+
+[node name="Pipes5" parent="." instance=ExtResource("2_cs1rk")]
+position = Vector2(1050, 290)
